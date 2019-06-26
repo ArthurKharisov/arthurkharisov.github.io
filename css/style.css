@@ -188,16 +188,28 @@ ul.topnav li.right {float: right;}
 		text-align: justify;
 	}
 	
-	.ab-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "namepage namepage namepage namepage pagehref";
-}
+	.grid-container1 {
+	  display: grid;
+	  padding: 0 250px;
+	  grid-template-columns: 1fr 1fr 1fr 1fr;
+	  grid-template-rows: 1fr 1fr 1fr 1fr;
+	  grid-template-areas: "photo shortinfo shortinfo shortinfo" "experience experience skills skills" "firstarea firstarea firstarea firstarea" "secondarea secondarea secondarea secondarea";
+	}
 
-.ab-namepage { grid-area: ab-namepage; }
+	.photo { 
+	margin: 5px;
+	grid-area: photo; 
+	}
 
-.ab-pagehref { grid-area: ab-pagehref; }
+	.shortinfo { grid-area: shortinfo; }
+
+	.experience { grid-area: experience; }
+
+	.skills { grid-area: skills; }
+
+	.firstarea { grid-area: firstarea; }
+
+	.secondarea { grid-area: secondarea; }
 	
 	.table-fill {
 	  background: white;
