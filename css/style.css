@@ -38,6 +38,10 @@ ul.topnav li a.active {
 
 ul.topnav li.right {float: right;}
 
+.topnav #menu {
+	display: none;
+}
+
 .footer {
   display: block;
   background-color: #dfdfdf;
@@ -69,6 +73,10 @@ ul.topnav li.right {float: right;}
   transform: translate(-50%, -50%);
   color: white;
 }
+
+div.hero-text h1{
+		font-size: 50px;
+	}
 
 .supe-image {
   background-color: #f6f6f6;
@@ -291,6 +299,63 @@ ul.topnav li.right {float: right;}
 	
 	.footer {
 		padding: 30px 50px;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+	
+	ul.topnav li.right, 
+	ul.topnav li {
+		float: none;
+	}
+	ul.topnav {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0 0px;
+	  overflow: hidden;
+	  background-color: #f1f1f1;
+	}
+
+
+	.hero-text {
+	  text-align: center;
+	  position: inherit;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  color: white;
+	}
+
+	div.hero-text h1{
+		font-size: 30px;
+	}
+
+	.right {
+		display: none;
+	}
+
+	.topnav #menu {
+		display: block;
+		text-align: right;
+	}
+
+
+	.mains {
+		padding: 0 50px;
+	  }
+
+	.grid {
+	  padding: 10 50px;
+	  padding-bottom: 50px;
+	  display: grid;
+	  grid-gap: 10px;
+	  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+	
+	.footer {
+		padding: 30px 50px;
+		text-align: center;
 	}
 
 }
