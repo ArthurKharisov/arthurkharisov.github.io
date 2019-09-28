@@ -294,7 +294,7 @@ div.hero-text h1{
 	  padding-bottom: 50px;
 	  display: grid;
 	  grid-gap: 10px;
-	  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 	
 	.footer {
@@ -306,6 +306,12 @@ div.hero-text h1{
 @media screen and (max-width: 622px) {
 	
 	
+
+	ul.topnav li a {
+		text-align: left;
+	}
+
+
 	ul.topnav {
 	  list-style-type: none;
 	  margin: 0;
@@ -334,7 +340,19 @@ div.hero-text h1{
 
 	.topnav #menu {
 		display: block;
-		text-align: right;
+		float: right;
+	}
+
+
+
+	.mm.responsive .right{
+		display: block;
+		position: relative;
+		top: 50px;
+	}
+
+	ul.topnav.responsive {
+		height: 300px;
 	}
 
 
@@ -347,7 +365,26 @@ div.hero-text h1{
 	  padding-bottom: 50px;
 	  display: grid;
 	  grid-gap: 10px;
-	  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	/*.grid-container {
+		padding: 0 0px;
+		grid-template-areas: "leftbox leftbox leftbox leftbox leftbox" "rightbox rightbox rightbox rightbox rightbox" "infobox infobox infobox infobox infobox";
+	}*/
+
+	.grid-container {
+		padding: 0 0px;
+	  	display: grid;
+	  	grid-template-columns: 1fr 1fr 1fr 1fr;
+	  	grid-template-rows: 1fr 1fr;
+	  	grid-template-areas: "leftbox leftbox leftbox leftbox" "rightbox rightbox rightbox rightbox" "infobox infobox infobox infobox";
+	}
+
+	
+	.infobox, .rightbox, .leftbox{
+		padding: 10px;
+		margin: initial;
 	}
 	
 	.footer {
